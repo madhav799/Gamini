@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PNR Status</title>
+    <link rel="stylesheet" href="pnr.css" />
+    <link rel="icon" href="./assets/sub-favi.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="pnr.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">Gamini</div>
+      </div>
+    </nav>
+
+    <div class="wrapper">
+      <div class="pnr-features-handling">
+        <h1>PNR Status</h1>
+        <div class="top-top-pnr">
+          <div class="top-pnr">
+            <div class="check-pnr">
+              <input
+                class="pnr-input"
+                type="text"
+                name="pnr-no"
+                id="pnr-no"
+                placeholder="Enter the 10 digit PNR"
+              />
+            </div>
+            <button class="button-68" role="button">Check PNR Status</button>
+          </div>
+        </div>
+</div>
+        <div class="loader">
+          <img src="loader.gif" alt="" height="100px" />
+        </div>
+
+  <div class="top-error ">
+
+    <div class="notification">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notititle">Error</div>
+      <div class="notibody">The PNR entered is invalid or Expired</div>
+    </div>
+  </div>
+
+
+        <div class="pnr-details">
+          <div class="pnr-heading">
+            <p class="status-head">PNR :</p>
+            <p class="response pnr-res-no"></p>
+          </div>
+          <div class="train-details common-pnr active">
+            <div class="train-no common-sub-pnr">
+              <p class="main-title">Train No.</p>
+              <p class="response res-train-no"></p>
+            </div>
+            <div class="train-name common-sub-pnr common-sub-pnr2">
+              <p class="main-title">Train Name</p>
+              <p class="response res-train-name"></p>
+            </div>
+          </div>
+
+          <div class="journey-details common-pnr">
+            <div class="dateOJ common-sub-pnr">
+              <p class="main-title">Date Of Journey</p>
+              <p class="response res-doj"></p>
+            </div>
+            <div class="classOJ common-sub-pnr common-sub-pnr2">
+              <p class="main-title">Class</p>
+              <p class="response res-class"></p>
+            </div>
+          </div>
+
+          <div class="station-details common-pnr">
+            <div class="boarding common-sub-pnr">
+              <p class="main-title">Boarding Station</p>
+              <p class="response res-bo-st"></p>
+            </div>
+            <div class="destination common-sub-pnr common-sub-pnr2">
+              <p class="main-title">Destination Station</p>
+              <p class="response res-des-st"></p>
+            </div>
+          </div>
+
+          <div class="passenger-details common-pnr">
+            <div class="pass-count common-sub-pnr">
+              <p class="main-title">Passenger Count</p>
+              <p class="response res-pas-count"></p>
+            </div>
+
+            <div class="total-fare common-sub-pnr common-sub-pnr2">
+              <p class="main-title">Ticket Fare</p>
+              <p class="response res-fare"></p>
+            </div>
+          </div>
+          <div class="top-pantry common-pnr">
+            <div class="t-cancel common-sub-pnr common-sub-pnr2">
+              <p class="main-title">Train status</p>
+              <p class="response res-cancel"></p>
+            </div>
+            <div class="pantry common-sub-pnr">
+              <p class="main-title">More info</p>
+              <p class="response res-pantry"></p>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="pnr-features">
+          <h2>What are the Top Features of GAMINI PNR Status?</h2>
+          <ul class="Features-desc">
+                            
+                    <li>🚂 Instant and Live update of your IRCTC train tickets</li>
+               <li>   🎫 PNR Status with seat, coach position, and platform number.</li>  
+                <li>🧑‍🤝‍🧑 PNR Status with passenger names and journey details</li>    
+                  <li>🚆 Train Details along with PNR status</li>  
+                  <li>🍽️ Provides information about the pantry in the Train   </li>  
+          </ul>
+        </div>
+    
+   
+    <footer>
+      <div class="foot">
+        <!-- <div>
+              <p class="f-head">Find Me Online:)</p>
+            <div class="social-media">
+             
+              <i class="icon fa-2x fa-brands fa-facebook"></i>
+              <i class="icon fa-2x fa-brands fa-instagram"></i>
+              <i class="icon fa-2x fa-brands fa-twitter"></i>
+                        
+
+              
+            </div>
+          </div> -->
+
+        <div class="copyright">
+          © 2024 Gaurav Barwal
+          <br />
+          All Rights Reserved
+        </div>
+        <div></div>
+      </div>
+    </footer>
+</div>
+  </body>
+</html>

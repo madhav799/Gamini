@@ -1,0 +1,384 @@
+
+*{margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+.wrapper
+{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.navbar
+{  
+  /* margin-top: -13rem;   */
+      position: fixed;
+      width: 100vw;
+      z-index: 10;
+     padding: 1rem 0rem 1rem 8rem;
+     display: flex;
+    /* z-index: 10; */
+    /* justify-content:right; */
+
+    /* left: 2rem; */
+    /* text-align: center; */
+    align-items: center;
+    background-color: dimgrey;
+    box-shadow:0px 0px 10px whitesmoke;
+}
+
+.top-pnr
+{
+    display: flex;
+    padding-bottom: 4rem;
+    
+}
+.top-top-pnr
+{
+    display: flex;
+    width: 100vw;
+    background-color: gainsboro;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.top-top-pnr.active{
+  display: none;
+}
+
+.pnr-input
+{
+    padding: 2rem;
+    font-family: "Rubik", sans-serif;
+    border-top-left-radius:8px ;
+    border-bottom-left-radius:8px ;
+    border: 2px solid #27ae60;
+    font-size: 1rem;
+    /* background-color: white; */
+    /* border: white; */
+}
+
+h1
+{
+  padding-top: 6rem ;
+  background-color: gainsboro;
+  padding-bottom: 2rem ;
+    text-align: center;
+   font-size: 2rem;
+   font-family: "Protest Guerrilla";
+   font-weight: 400;
+   font-style: normal;
+}
+
+.button-68 {
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-68:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button-68:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button-68:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }
+  
+
+
+
+.logo
+{
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 600;
+    /* left: 100px; */
+    font-size: xx-large;
+     font-style: normal;
+  color: whitesmoke;
+   user-select: none;
+
+}
+
+h2{
+    padding-top: 4rem ;
+    padding-bottom: 2rem ;
+      text-align: center;
+     font-size: 30px;
+     font-family: "Protest Guerrilla";
+     font-weight: 400;
+     font-style: normal;
+}
+.loader
+{
+  margin: 5rem;
+  /* display: flex; */
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.loader.active{
+  display: flex;
+}
+.pnr-features-handling.active
+{
+  display: none;
+}
+.pnr-features
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-bottom: 4rem;
+    align-items: center;
+    background-color: gainsboro;
+}
+ul{
+   list-style:circle;
+}
+
+.Features-desc
+{
+    font-size: 20px;
+    padding: 0rem 1rem;
+    font-family: "Rubik", sans-serif;
+}
+.Features-desc li{
+    padding:0.5rem 0 0.5rem 0 ;
+}
+
+
+.foot{
+    background-color: dimgray;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: space-evenly;
+  }
+  .icon
+  {
+    overflow-y: hidden;
+  }
+  .f-head
+  {
+    font-size: 2rem;
+    font-family: "Protest Guerrilla";
+    padding: 1rem;
+  }
+  .social-media
+  {
+    font-size: larger;
+    color: gainsboro;
+    display: flex;
+    padding-left:1rem ;
+    gap: 1.5rem;
+  }
+  
+  .copyright
+  {
+    padding: 2rem;
+    font-size: large;
+    font-family: "Rubik", sans-serif;
+    color: whitesmoke;
+  }
+
+
+  /* css for showing pnr details */
+  .pnr-details{
+    /* background-color: #1e8449; */
+    padding-top: 6rem;
+    height: auto;
+    width: 100vw;
+    display: none;
+}
+.pnr-details.active
+{
+  display: block;
+}
+.common-pnr
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0.2rem;
+    /* margin:1rem 0 1rem 0 ; */
+   height: 60px;
+    background-color: #1e8449;
+  
+    align-items: center;
+    padding-left: 10%;
+    /* justify-content: space-around; */
+}
+.common-sub-pnr2{
+    padding-left: 50%;
+}
+.common-sub-pnr
+{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+}
+
+/* error handling */
+ 
+.top-error {
+width: 100vw;
+/* position: absolute; */
+margin-top: 4rem;
+padding-top: 8rem;
+display: none;
+justify-content: center;
+background-color: gainsboro;
+}
+.top-error.active{
+  display: flex;
+}
+.notification {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 18rem;
+  height: 10rem;
+  background: #29292c;
+  border-radius: 1rem;
+  border: 2px solid #27ae60;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  /* --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff); */
+  --color: #32a6ff
+}
+
+
+
+
+
+.notititle {
+  color: red;
+  /* background-color: dimgray; */
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: transform 300ms ease;
+  z-index: 10;
+}
+
+
+
+.notibody {
+  color: white;
+  font: bolder;
+  font-size: 1.5rem;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+
+
+
+.note {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+
+
+
+.response
+{
+    min-width: 100px;
+    background-color:rgb(160, 158, 158);
+    min-height: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pnr-heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.status-head
+{
+    font-size: 2rem;
+    font-family: "Protest Guerrilla";
+    padding: 1rem;
+}
+.main-title
+{  
+    font-family: "Rubik", sans-serif;
+    padding: 1rem;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background-color: gainsboro;
+}

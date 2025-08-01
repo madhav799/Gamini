@@ -1,0 +1,87 @@
+img{
+    border-radius: 10%;
+    margin: 1rem;
+}
+*{
+    overflow: hidden;
+}
+.wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     flex-wrap: wrap;
+    background-color: #27ae64;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    
+}
+.content
+{
+    padding-left: 4rem;
+}
+h1,h2,h3{
+    font-family: "Protest Guerrilla";
+    /* padding-left: 4rem; */
+}
+
+p{
+    font-family: "Rubik", sans-serif;
+    /* font-family: cursive; */
+    padding-bottom: 2rem;
+    /* font-optical-sizing: auto; */
+     color: white;
+    font-style: normal;
+    font-size: 20px;
+    /* padding-left: 4rem; */
+    /* padding-right: 4rem; */
+    max-width: 500px;
+}
+
+
+
+  
+  
+  /* CSS */
+  .button-68 {
+   
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: black;
+    border-radius: 8px;
+    border-style: none;
+    /* box-shadow: rgba(39, 174, 96, .15) 0 4px 9px; */
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    /* transform: translate3d(0, 0, 0); */
+    
+  }
+  
+  .button-68:hover {
+    background-color: dimgray;
+   
+  
+    transition-duration: .35s;
+  }
+  
+
+  
+  .button-68:hover {
+    box-shadow: black 0px 0px 12px;
+  }
+  
+  
